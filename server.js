@@ -4,6 +4,7 @@ const bodyParser = require("body-parser");
 const recipeRoutes = require("./routes/recipeRoutes");
 
 
+
 require("dotenv").config();
 
 const app =express();
@@ -15,8 +16,8 @@ connectDB();
 
 app.use("/api/recipes",recipeRoutes);
 
-const PORT = process.env.PORT || 6666;
+const PORT = process.env.PORT || 3000;
 
 app.listen(PORT,() => {
-    console.log("server is running at the url http://localhost: 6666" )
+    console.log("server is running at the url http://localhost: 3000" )
 })

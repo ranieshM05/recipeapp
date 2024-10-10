@@ -1,0 +1,161 @@
+{
+	"info": {
+		"_postman_id": "5aff7b46-b696-49a9-8fcb-4d31f2f5930e",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38758926"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Spaghetti Carbonara\",\r\n    \"food\": \"Pasta\",\r\n    \"ingredients\": [\r\n        { \"name\": \"Spaghetti\", \"quantity\": \"200g\" },\r\n        { \"name\": \"Bacon\", \"quantity\": \"100g\" },\r\n        { \"name\": \"Eggs\", \"quantity\": \"2\" },\r\n        { \"name\": \"Parmesan Cheese\", \"quantity\": \"50g\" },\r\n        { \"name\": \"Black Pepper\", \"quantity\": \"to taste\" }\r\n    ],\r\n    \"instructions\": [\r\n        \"Cook spaghetti according to package instructions.\",\r\n        \"Fry the bacon until crispy.\",\r\n        \"Beat the eggs and mix with grated Parmesan.\",\r\n        \"Combine spaghetti, bacon, and egg mixture in a pan.\",\r\n        \"Serve with black pepper.\"\r\n    ],\r\n    \"cuisine\": \"Italian\",\r\n    \"category\": \"Main Dish\",\r\n    \"servings\": 2\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/recipes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"recipes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"_id\": \"60d5f9d12f823f1e4c8e1a32\",\r\n        \"name\": \"Spaghetti Carbonara\",\r\n        \"food\": \"Pasta\",\r\n        \"ingredients\": [],\r\n        \"instructions\": [],\r\n        \"servings\": 2,\r\n        \"__v\": 0\r\n    },\r\n    {\r\n        \"_id\": \"60d5f9d12f823f1e4c8e1a33\",\r\n        \"name\": \"Pancakes\",\r\n        \"food\": \"Breakfast\",\r\n        \"ingredients\": [],\r\n        \"instructions\": [],\r\n        \r\n        \"__v\": 0\r\n    }\r\n]\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/recipes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"recipes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\": \"60d5f9d12f823f1e4c8e1a32\",\r\n    \"name\": \"Spaghetti Carbonara\",\r\n    \"food\": \"Pasta\",\r\n    \"ingredients\": [{ \"name\": \"Spaghetti\", \"quantity\": \"200g\" },\r\n        { \"name\": \"Bacon\", \"quantity\": \"100g\" },\r\n        { \"name\": \"Eggs\", \"quantity\": \"2\" },\r\n        { \"name\": \"Parmesan Cheese\", \"quantity\": \"50g\" },\r\n        { \"name\": \"Black Pepper\", \"quantity\": \"to taste\" }],\r\n    \"instructions\": [\"Cook spaghetti according to package instructions.\",\r\n        \"Fry the bacon until crispy.\",\r\n        \"Beat the eggs and mix with grated Parmesan.\",\r\n        \"Combine spaghetti, bacon, and egg mixture in a pan.\",\r\n        \"Serve with black pepper.\"],\r\n    \"__v\": 0\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/recipes/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"recipes",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Spaghetti Carbonara\",\r\n    \"food\": \"Pasta\",\r\n    \"ingredients\": [\r\n        { \"name\": \"Spaghetti\", \"quantity\": \"250g\" }, // Updated quantity\r\n        { \"name\": \"Bacon\", \"quantity\": \"100g\" },\r\n        { \"name\": \"Eggs\", \"quantity\": \"2\" },\r\n        { \"name\": \"Parmesan Cheese\", \"quantity\": \"50g\" },\r\n        { \"name\": \"Black Pepper\", \"quantity\": \"to taste\" }\r\n    ],\r\n    \"instructions\": [\r\n        \"Cook spaghetti according to package instructions.\",\r\n        \"Fry the bacon until crispy.\",\r\n        \"Beat the eggs and mix with grated Parmesan.\",\r\n        \"Combine spaghetti, bacon, and egg mixture in a pan.\",\r\n        \"Serve with black pepper.\"\r\n    ],\r\n    \r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/recipes/60d5f9d12f823f1e4c8e1a32",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"recipes",
+						"60d5f9d12f823f1e4c8e1a32"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/recipes/60d5f9d12f823f1e4c8e1a32",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"recipes",
+						"60d5f9d12f823f1e4c8e1a32"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
